@@ -74,7 +74,7 @@ h1 {
   position: absolute;
   top: -5rem;
   font-size: 3.3rem;
-  animation: fallingicons 1s ease forwards;
+  animation: fallingicons 1s ease-out forwards;
 }
 
 .cssicon {
@@ -83,7 +83,7 @@ h1 {
   top: -5rem;
   left: 4rem;
   font-size: 3.3rem;
-  animation: fallingicons 1s ease forwards;
+  animation: fallingicons 1s ease-out forwards;
   animation-delay: 1s;
 }
 
@@ -93,7 +93,7 @@ h1 {
   left: 8rem;
   top: -5rem;
   font-size: 3.3rem;
-  animation: fallingicons 1s ease forwards;
+  animation: fallingicons 1s ease-out forwards;
   animation-delay: 2s;
 }
 
@@ -425,22 +425,32 @@ footer {
     opacity: 0;
   }
 
-  80% {
+  60% {
     transform: translateY(14rem) translateX(0);
     opacity: 1;
   }
 
-  90% {
+  65% {
     transform: translateY(14rem) translateX(0);
     opacity: 1;
+    color: var(--white);
   }
-  93% {
+  70% {
     transform: translateY(13.5rem);
+    transform: scale(20);
+    color: var(--primary);
+  }
+
+  95% {
+    transform: translateY(14rem);
+    transform: scale(1);
+    color: var(--highlight);
   }
 
   100% {
     opacity: 1;
     transform: translateY(14rem) translateX(0);
+    color: var(--highlight);
   }
 }
 
