@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fa808a9791.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./myblog.css" />
+  </head>
+  <body>
+    <header class="headerblog">
+      <a class="logo2" href="./index.html">DT</a>
+
+      <label for="burger"><i class="fa-solid fa-bars burger2"></i></label>
+      <input class="inputHeader" type="checkbox" name="burger" id="burger" />
+
+      <nav class="navHeader2">
+        <ul>
+          <label class="x" for="burger"><i class="fa-solid fa-x"></i></label>
+          <input
+            class="inputHeader"
+            type="checkbox"
+            name="burger"
+            id="burger"
+          />
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#whyme">About me</a></li>
+          <li><a href="#myTools">Technologies</a></li>
+          <li><a href="#myblog">My Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="top">
+      <div class="bookmarks">
+        <a href="#htmlsemantic">Semantic HTML</a><a href="#flexbox">Flexbox</a>
+        <a href="#forms">Forms</a><a href="#cssselectors">CSS Selectors</a
+        ><a href="#mediaquerries">Media Querries</a>
+      </div>
+      <div class="ueberbox">
+        <section class="section1">
+          <h1 class="heins">Diving Into Web Development</h1>
+          <div class="blogintro">
+            "Looking to sharpen your WebDev skills? From beginner-friendly CSS
+            tips to adnaved strategies, you'll find everthing you need here"
+          </div>
+        </section>
+        <section class="section2">
+          <article class="blog" id="htmlsemantic">
+            <h3 class="h3blog">Understanding Semantic HTML</h3>
+            <picture class="pic1">
+              <img src="./images/html-semantic-elements.jpg" alt=""
+            /></picture>
+            <p>
+              Semantic HTML refers to the use of HTML tags that have meaningful
+              names and convey the purpose of the content they contain. Unlike
+              generic tags such as &lt;div&gt; or &lt;span&gt;, semantic
+              elements like &lt;header&gt;, &lt;article&gt;, &lt;section&gt;,
+              and &lt;footer&gt; clearly define their role in the structure of a
+              webpage. This not only makes your code easier to read and maintain
+              but also improves accessibility for screen readers and enhances
+              search engine optimization (SEO).
+            </p>
+            <div class="articlebox">
+              <h4 class="h4blog">Improved Accessibility</h4>
+              <p>
+                One key benefit of semantic HTML is improved accessibility.
+                Screen readers and other assistive devices rely on well-defined
+                HTML structures to help visually impaired users navigate a
+                webpage. For example, when a screen reader encounters a
+                &lt;nav&gt; tag, it knows that this section contains navigation
+                links, allowing users to skip directly to the main menu without
+                having to wade through unrelated content.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Better SEO</h4>
+              <p>
+                Search engines benefit from semantic HTML as well. Tags like
+                &lt;h1&gt; for the main heading and subsequent &lt;h2&gt; and
+                &lt;h3&gt; tags for subheadings create a clear hierarchy,
+                signaling the relative importance of each section. This
+                structure can improve your ranking in search engine results,
+                driving more organic traffic to your site.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Organizing Content with Logical Structure</h4>
+              <p>
+                Using semantic tags organizes your content in a meaningful way.
+                For instance, &lt;header&gt; introduces the top section of a
+                page, &lt;main&gt; contains the primary content, and
+                &lt;footer&gt; concludes the page. Similarly, &lt;aside&gt; is
+                perfect for supplementary content like sidebars or related
+                links, while &lt;section&gt; and &lt;article&gt; group related
+                content logically.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Collaboration and Maintainability</h4>
+              <p>
+                Semantic HTML also simplifies collaboration among developers.
+                Clean and descriptive code is easier to understand and modify. A
+                developer can immediately identify the purpose of a
+                &lt;footer&gt; or &lt;section&gt; tag without deciphering
+                generic &lt;div&gt; elements, speeding up development and
+                reducing errors.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Getting Started with Semantic HTML</h4>
+              <p>
+                Transitioning to semantic HTML can be done gradually. Start by
+                replacing non-descriptive tags like &lt;div&gt; with meaningful
+                alternatives. For example, use &lt;nav&gt; for menus,
+                &lt;header&gt; for page headings, and &lt;article&gt; for
+                self-contained pieces of content like blog posts. Over time,
+                this leads to cleaner, more effective code.
+              </p>
+              <p>
+                In conclusion, understanding and implementing semantic HTML is
+                an essential skill for web developers. It provides a foundation
+                for creating websites that are visually appealing, structurally
+                sound, and accessible to all users. By embracing semantic
+                principles, you ensure your website meets modern standards,
+                benefits search engines, and provides an inclusive experience
+                for all users.
+              </p>
+            </div>
+            <a class="backtt" href="#top">Back to Top</a>
+          </article>
+          <article class="blog" id="flexbox">
+            <h3 class="h3blog">CSS Flexbox: A Beginner's Guide</h3>
+            <picture class="pic2">
+              <img src="./images/flex.png" alt=""
+            /></picture>
+            <p>
+              Flexbox is a powerful layout model in CSS that allows you to
+              create complex and responsive layouts with ease. It provides a
+              more efficient way to arrange items in a container, compared to
+              traditional layout methods. In this guide, we'll explore the
+              basics of Flexbox and how you can use it to build flexible and
+              adaptive designs.
+            </p>
+            <div class="articlebox">
+              <h4 class="h4blog">What is Flexbox?</h4>
+              <p>
+                Flexbox, or the Flexible Box Layout, is a one-dimensional layout
+                model in CSS that allows you to align and distribute items
+                within a container. It is ideal for creating flexible layouts,
+                where the size and position of items are determined based on the
+                available space in the container.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">The Flexbox Container</h4>
+              <p>
+                To create a flex container, you need to apply the
+                <code>display: flex;</code> property to a parent element. This
+                tells the browser that the child elements should follow the
+                Flexbox model. Here’s an example of a flex container:
+              </p>
+              <div class="code-container">
+                <pre>
+      /* Flex container */
+      .container {
+          display: flex;
+      }
+              </pre
+                >
+              </div>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Flexbox Properties</h4>
+              <p>
+                Flexbox offers several properties for both the container and the
+                items inside it. Let’s start by looking at the most common
+                properties.
+              </p>
+              <h5>1. justify-content</h5>
+              <p>
+                The <code>justify-content</code> property is used to align items
+                along the main axis (the direction of the flex container). It
+                can accept several values like <code>flex-start</code>,
+                <code>center</code>, <code>space-between</code>, and others.
+                Here’s an example of how you can use it:
+              </p>
+              <div class="code-container">
+                <pre>
+      /* Center items along the main axis */
+      .container {
+          display: flex;
+          justify-content: center;
+      }
+              </pre
+                >
+              </div>
+              <h5>2. align-items</h5>
+              <p>
+                The <code>align-items</code> property is used to align items
+                along the cross axis (perpendicular to the main axis). It can be
+                used to center, stretch, or align items at the start or end of
+                the container.
+              </p>
+              <div class="code-container">
+                <pre>
+      /* Align items to the center along the cross axis */
+      .container {
+          display: flex;
+          align-items: center;
+      }
+              </pre
+                >
+              </div>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Flexbox Item Properties</h4>
+              <p>
+                In addition to the properties for the flex container, Flexbox
+                also offers properties for the items inside the container. These
+                properties help you control the behavior and size of individual
+                items within the container.
+              </p>
+              <h5>1. flex-grow</h5>
+              <p>
+                The <code>flex-grow</code> property allows an item to grow and
+                take up any remaining space in the container. The higher the
+                value, the more space the item will take. For example:
+              </p>
+              <div class="code-container">
+                <pre>
+      /* Allow the item to grow */
+      .item {
+          flex-grow: 1;
+      }
+              </pre
+                >
+              </div>
+              <h5>2. flex-shrink</h5>
+              <p>
+                The <code>flex-shrink</code> property allows an item to shrink
+                when there’s not enough space in the container. The higher the
+                value, the more the item will shrink. For example:
+              </p>
+              <div class="code-container">
+                <pre>
+      /* Allow the item to shrink */
+      .item {
+          flex-shrink: 1;
+      }
+              </pre
+                >
+              </div>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Responsive Design with Flexbox</h4>
+              <p>
+                Flexbox is an excellent tool for creating responsive layouts. By
+                combining Flexbox with media queries, you can build layouts that
+                adjust based on the size of the viewport. For example, you can
+                create a layout that displays items in a row on large screens
+                and stacks them in a column on smaller screens:
+              </p>
+              <div class="code-container">
+                <pre>
+      /* Flex layout for large screens */
+      .container {
+          display: flex;
+          justify-content: space-between;
+      }
+      /* Stack items on small screens */
+      @media (max-width: 600px) {
+          .container {
+              flex-direction: column;
+          }
+      }
+              </pre
+                >
+              </div>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Conclusion</h4>
+              <p>
+                Flexbox is a powerful layout tool that can simplify the process
+                of creating responsive, flexible designs. By mastering the basic
+                properties like <code>justify-content</code>,
+                <code>align-items</code>, <code>flex-grow</code>, and
+                <code>flex-shrink</code>, you can easily control the alignment
+                and distribution of items in your layouts. When combined with
+                media queries, Flexbox enables you to create layouts that adapt
+                seamlessly to different screen sizes and devices.
+              </p>
+            </div>
+            <a class="backtt" href="#top">Back to Top</a>
+          </article>
+          <article class="blog" id="forms">
+            <h3 class="h3blog">HTML Forms: Tips for Better User Experience</h3>
+            <picture class="pic3">
+              <img src="./images/forms.jpg" alt=""
+            /></picture>
+            <p>
+              Forms are a vital part of almost every website. Whether you’re
+              creating a contact form, a sign-up page, or an online survey, the
+              way users interact with forms can significantly impact the overall
+              user experience (UX). When implemented correctly, forms can be
+              intuitive, efficient, and help streamline user tasks. However,
+              poorly designed forms can frustrate users, causing them to abandon
+              the process entirely. In this article, we’ll explore essential
+              tips to enhance the user experience when designing HTML forms.
+            </p>
+            <div class="articlebox">
+              <h4 class="h4blog">Keep Forms Simple and Focused</h4>
+              <p>
+                A key principle of good form design is simplicity. Users should
+                be able to complete forms with minimal effort and distraction.
+                The fewer fields you have, the better. For instance, ask for
+                only the most essential information, and try to avoid
+                unnecessary fields. If you must include additional fields,
+                consider making them optional or providing clear explanations of
+                why they're necessary. Keeping forms simple increases the
+                likelihood of users completing them.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Use Clear and Descriptive Labels</h4>
+              <p>
+                Clear labels are essential for guiding users through the form.
+                Instead of generic placeholders like "Name" or "Email," use more
+                specific descriptions, such as "Full Name" or "Primary Email
+                Address." Ensure that each label is placed close to the
+                corresponding field and visually distinguishable from the rest
+                of the content. This helps users understand exactly what
+                information is required, reducing confusion.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Group Related Fields Together</h4>
+              <p>
+                Organizing form fields logically is crucial for a smooth user
+                experience. Group related fields together in sections or use
+                multi-step forms if necessary. For example, if you're creating a
+                registration form, you can group "Personal Information,"
+                "Account Information," and "Payment Details" into separate
+                sections. This helps break up the form into manageable chunks
+                and makes it less overwhelming.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Provide Real-Time Validation</h4>
+              <p>
+                Form validation is an essential step in any form submission
+                process. Rather than waiting until after the user submits the
+                form to show error messages, consider using real-time
+                validation. As the user fills in the fields, provide immediate
+                feedback on whether the information is correct. For example, a
+                password field could notify the user if the password is too
+                short or if the email address format is incorrect. Real-time
+                validation not only improves user experience but also prevents
+                frustration by catching errors early.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Use Smart Defaults and Autofill</h4>
+              <p>
+                Whenever possible, use smart defaults to make the form-filling
+                process easier. For example, if a user has already filled out
+                certain information in previous forms or has an account,
+                pre-fill these fields with their existing data. If the form is
+                lengthy, allow the browser’s autofill feature to suggest answers
+                to common fields like address, name, or phone number. This saves
+                the user time and helps prevent data entry errors.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Make the Form Accessible</h4>
+              <p>
+                Accessibility is a crucial aspect of form design that should not
+                be overlooked. Ensure that your form is usable by all users,
+                including those with disabilities. This can be achieved by using
+                semantic HTML tags like <code>&lt;label&gt;</code> for form
+                fields, <code>&lt;fieldset&gt;</code> for grouping, and
+                <code>&lt;legend&gt;</code> for descriptions. Also, consider
+                implementing ARIA (Accessible Rich Internet Applications) roles
+                to improve accessibility for screen readers. By making your form
+                accessible, you create a more inclusive experience for everyone.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Test Your Forms Regularly</h4>
+              <p>
+                Regular testing is vital to ensuring your forms perform well and
+                provide a good user experience. Conduct usability testing to
+                identify pain points, such as confusing labels, hard-to-find
+                buttons, or overly complex fields. User feedback is
+                invaluable—ask for input from real users and use it to make
+                improvements. Additionally, perform cross-browser testing to
+                make sure your form works consistently across different browsers
+                and devices.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Conclusion</h4>
+              <p>
+                HTML forms are a powerful tool for collecting user data, but
+                they must be designed with care. By keeping forms simple, using
+                clear labels, grouping related fields, and providing real-time
+                validation, you can improve the overall user experience and
+                reduce the likelihood of form abandonment. Additionally, making
+                the form accessible and testing it regularly ensures that all
+                users can complete it with ease. Keep these tips in mind the
+                next time you design a form, and you’ll help ensure that your
+                users have a smooth, efficient experience.
+              </p>
+            </div>
+            <a class="backtt" href="#top">Back to Top</a>
+          </article>
+          <article class="blog" id="cssselectors">
+            <h3 class="h3blog">Mastering CSS Selectors</h3>
+            <picture class="pic4">
+              <img src="./images/css-selectors.png" alt=""
+            /></picture>
+            <p>
+              CSS selectors are one of the most fundamental concepts in web
+              development. They are used to target HTML elements and apply
+              styles to them. Mastering CSS selectors not only makes it easier
+              to apply specific styles but also improves your ability to write
+              clean and efficient CSS code. In this article, we'll explore some
+              of the most commonly used CSS selectors and provide tips for
+              mastering them.
+            </p>
+            <div class="articlebox">
+              <h4 class="h4blog">What Are CSS Selectors?</h4>
+              <p>
+                CSS selectors are patterns used to select and style HTML
+                elements. They can target elements based on various attributes,
+                such as their type, class, id, or other properties. For example,
+                you can target all <code>&lt;h1&gt;</code> tags in a document,
+                or you can target only elements with a specific class or ID. CSS
+                selectors help you apply specific styles to different elements
+                on your webpage.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Basic Selectors</h4>
+              <p>The most basic and commonly used CSS selectors include:</p>
+              <div class="code-container">
+                <pre>
+        &lt;ul&gt;
+            &lt;li&gt;<code>&lt;element&gt;</code>&lt;/li&gt;
+            &lt;li&gt;<code>&lt;class&gt;</code>&lt;/li&gt;
+            &lt;li&gt;<code>&lt;id&gt;</code>&lt;/li&gt;
+        &lt;/ul&gt;
+            </pre
+                >
+              </div>
+              <p>
+                These selectors allow you to target elements directly based on
+                their tag name, class, or ID. For instance,
+                <code>&lt;h1&gt;</code> will select all
+                <code>&lt;h1&gt;</code> tags, while <code>.button</code> targets
+                all elements with the class "button", and
+                <code>#header</code> selects the element with the ID "header".
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Grouping Selectors</h4>
+              <p>
+                Grouping selectors allows you to apply the same styles to
+                multiple elements at once. This can help you reduce repetition
+                and keep your CSS clean. For example:
+              </p>
+              <div class="code-container">
+                <pre>
+        &lt;ul&gt;
+            &lt;li&gt;<code>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;</code>&lt;/li&gt;
+            &lt;li&gt;<code>&lt;.button&gt;, &lt;.link&gt;</code>&lt;/li&gt;
+        &lt;/ul&gt;
+            </pre>
+              </div>
+              <p>
+                In this case, you can apply the same style to multiple heading
+                tags like <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, and
+                <code>&lt;h3&gt;</code>, or multiple classes like
+                <code>.button</code> and <code>.link</code>, by grouping them
+                with a comma.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Descendant and Child Selectors</h4>
+              <p>
+                The descendant selector allows you to target an element that is
+                nested within another element. For example, if you want to style
+                <code>&lt;p&gt;</code> tags inside a
+                <code>&lt;div&gt;</code> with a specific class, you can use the
+                following selector:
+              </p>
+              <div class="code-container">
+                <pre>
+        <code>.container  p</code>
+            </pre>
+              </div>
+              <p>
+                This selector will only target <code>&lt;p&gt;</code> tags that
+                are direct children of an element with the class "container". If
+                you want to target all <code>&lt;p&gt;</code> tags inside any
+                <code>&lt;div&gt;</code> (even nested), you would use the
+                descendant selector:
+              </p>
+              <div class="code-container">
+                <pre>
+        <code>.container p</code>
+            </pre>
+              </div>
+              <p>
+                Understanding the difference between descendant and child
+                selectors helps you target elements more precisely.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Attribute Selectors</h4>
+              <p>
+                Attribute selectors allow you to target elements based on their
+                attributes. For example, if you want to select all
+                <code>&lt;a&gt;</code> tags with a specific href attribute, you
+                can use the following selector:
+              </p>
+              <div class="code-container">
+                <pre>
+        <code>a[href="https://www.example.com"]</code>
+            </pre
+                >
+              </div>
+              <p>
+                Attribute selectors are extremely powerful because they allow
+                you to target elements based on attributes such as
+                <code>href</code>, <code>src</code>, <code>alt</code>, and many
+                others.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Pseudo-Classes and Pseudo-Elements</h4>
+              <p>
+                Pseudo-classes and pseudo-elements are selectors that allow you
+                to target elements in a specific state or parts of elements. For
+                example, the <code>:hover</code> pseudo-class targets an element
+                when the user hovers over it, and the
+                <code>::before</code> pseudo-element lets you insert content
+                before an element’s actual content.
+              </p>
+              <div class="code-container">
+                <pre>
+        <code>a:hover</code> <p class="pimcodecont">- applies styles when the user hovers over a link.</p>
+        <code>::before</code> 
+        <p class="pimcodecont">- inserts content before an element.</p>
+            </pre>
+              </div>
+              <p>
+                Pseudo-classes and pseudo-elements help you create dynamic and
+                interactive designs, like changing the color of a button when
+                the user hovers over it or adding decorative content to your
+                webpage.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">
+                Combinators: Adjacent and General Sibling Selectors
+              </h4>
+              <p>
+                Combinators allow you to select elements based on their
+                relationship with other elements. The adjacent sibling selector
+                (<code>&lt;element1 + element2&gt;</code>) targets the second
+                element if it immediately follows the first element, while the
+                general sibling selector (<code
+                  >&lt;element1 ~ element2&gt;</code
+                >) targets the second element if it appears anywhere after the
+                first element.
+              </p>
+              <div class="code-container">
+                <pre>
+        <code>h1 + p</code> 
+        <p class="pimcodecont">- targets the first <code>&lt;p&gt;</code> element immediately after an <code>&lt;h1&gt;</code> </p>.
+        <code>h1 ~ p</code> 
+        <p class="pimcodecont">- targets any <code>&lt;p&gt;</code> elements that follow an <code>&lt;h1&gt;</code>.</p>
+            </pre>
+              </div>
+              <p>
+                These selectors help you create more complex relationships
+                between elements and apply styles based on their position in the
+                document.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Conclusion</h4>
+              <p>
+                Mastering CSS selectors is crucial for writing efficient and
+                maintainable stylesheets. By understanding the different types
+                of selectors—basic, grouping, descendant, child, attribute,
+                pseudo-classes, and combinators—you can target elements with
+                precision and flexibility. Whether you're styling a simple
+                webpage or building a complex layout, knowing how to use CSS
+                selectors effectively will help you create better user
+                experiences and more maintainable code.
+              </p>
+            </div>
+            <a class="backtt" href="#top">Back to Top</a>
+          </article>
+          <article class="blog" id="mediaquerries">
+            <h3 class="h3blog">Responsive Design with Media Queries</h3>
+            <picture class="pic5"
+              ><img src="./images/What-iS-CSS-media-Query.png" alt="" />
+            </picture>
+            <p>
+              In today’s world, websites need to be accessible across a variety
+              of devices, from large desktop monitors to small mobile screens.
+              Responsive web design (RWD) is an approach that allows web pages
+              to adapt and look great on any screen size or device. One of the
+              most powerful tools for achieving responsive design is CSS media
+              queries. In this article, we’ll explore what media queries are,
+              how they work, and how you can use them to make your website
+              responsive.
+            </p>
+            <div class="articlebox">
+              <h4 class="h4blog">What Are Media Queries?</h4>
+              <p>
+                Media queries are a feature of CSS that allow you to apply
+                different styles to your webpage depending on the
+                characteristics of the device or display. This includes
+                properties like screen width, height, orientation (landscape or
+                portrait), and resolution. Media queries enable your web page to
+                adjust its layout, font sizes, and other styling elements based
+                on the user’s device, improving the user experience across a
+                variety of devices.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">The Syntax of Media Queries</h4>
+              <p>
+                A basic media query consists of the <code>@media</code> rule,
+                followed by a condition that specifies when the styles inside it
+                should be applied. For example, if you want to apply styles for
+                screens that are at least 768px wide (commonly tablets), you can
+                use the following syntax:
+              </p>
+              <div class="code-container">
+                <pre>
+        @media (min-width: 768px) {
+            /* Styles go here */
+        }
+            </pre
+                >
+              </div>
+              <p>
+                In this example, the styles inside the media query will only be
+                applied if the viewport width is 768px or wider. You can also
+                use other conditions like <code>max-width</code>, which applies
+                styles when the screen width is less than a certain value.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Common Media Query Breakpoints</h4>
+              <p>
+                While you can define your own breakpoints based on your design,
+                there are some common media query breakpoints used across the
+                web. These breakpoints are typically based on common device
+                sizes:
+              </p>
+              <div class="code-container">
+                <pre>
+        /* Mobile phones */
+        @media (max-width: 600px) { /* Styles for mobile devices */ }
+        /* Tablets */
+        @media (min-width: 601px) and (max-width: 1024px) { /* Styles for tablets */ }
+        /* Desktops */
+        @media (min-width: 1025px) { /* Styles for desktop screens */ }
+            </pre
+                >
+              </div>
+              <p>
+                These breakpoints ensure that your website looks good on mobile
+                phones, tablets, and desktops. However, remember that these are
+                just guidelines, and you should tailor your breakpoints to the
+                specific needs of your design.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Using Media Queries for Layout Adjustments</h4>
+              <p>
+                One of the most common uses of media queries is to adjust the
+                layout of your website for different screen sizes. For example,
+                you may want to display a single column layout on mobile
+                devices, but a multi-column layout on larger screens. You can
+                achieve this using media queries like so:
+              </p>
+              <div class="code-container">
+                <pre>
+        /* Single column for mobile */
+        @media (max-width: 600px) {
+            .container {
+                display: block;
+            }
+        }
+        /* Multi-column for larger screens */
+        @media (min-width: 601px) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+            </pre
+                >
+              </div>
+              <p>
+                In this example, the layout switches from a single column to a
+                two-column grid layout depending on the viewport width. Media
+                queries allow you to design flexible layouts that adapt to
+                different screen sizes.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Changing Typography with Media Queries</h4>
+              <p>
+                Media queries can also be used to adjust typography for
+                different screen sizes. For example, you may want to increase
+                the font size for headings on larger screens and reduce it for
+                mobile devices. Here’s an example:
+              </p>
+              <div class="code-container">
+                <pre>
+        /* Large font size for desktops */
+        @media (min-width: 1025px) {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+        /* Smaller font size for mobile */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+            </pre
+                >
+              </div>
+              <p>
+                This ensures that text remains legible and appropriately sized
+                regardless of the screen size, improving readability on all
+                devices.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Handling Orientation with Media Queries</h4>
+              <p>
+                Media queries also allow you to target devices based on their
+                orientation—whether the device is in portrait or landscape mode.
+                For example, you may want to apply different styles depending on
+                whether the user is holding their mobile device vertically or
+                horizontally:
+              </p>
+              <div class="code-container">
+                <pre>
+        /* Styles for portrait mode */
+        @media (orientation: portrait) {
+            /* Styles for portrait orientation */
+        }
+        /* Styles for landscape mode */
+        @media (orientation: landscape) {
+            /* Styles for landscape orientation */
+        }
+            </pre
+                >
+              </div>
+              <p>
+                By using the <code>orientation</code> media feature, you can
+                adjust your design to better fit the user's screen orientation,
+                creating a more polished and adaptable experience.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Combining Media Queries</h4>
+              <p>
+                You can also combine multiple conditions in a single media query
+                to apply styles only when multiple conditions are met. For
+                example, you can target devices that are both at least 600px
+                wide and in portrait mode:
+              </p>
+              <div class="code-container">
+                <pre>
+        @media (min-width: 600px) and (orientation: portrait) {
+            /* Styles for devices that are at least 600px wide and in portrait mode */
+        }
+            </pre
+                >
+              </div>
+              <p>
+                This allows you to create highly specific styling rules and
+                makes your design more flexible and adaptable to different
+                devices and situations.
+              </p>
+            </div>
+            <div class="articlebox">
+              <h4 class="h4blog">Conclusion</h4>
+              <p>
+                Media queries are a powerful tool for making your website
+                responsive and ensuring it looks great on all devices. By using
+                media queries to adjust layouts, typography, and other elements
+                based on screen size, orientation, and other factors, you can
+                create a seamless user experience across desktop, tablet, and
+                mobile devices. With careful planning and the right breakpoints,
+                you can master responsive design and deliver a polished and
+                flexible web experience to all users.
+              </p>
+            </div>
+            <a class="backtt" href="#top">Back to Top</a>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <nav class="navFooter">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul>
+          <li><a href="#whyme">About me</a></li>
+          <li><a href="#myTools">Technologies</a></li>
+          <li><a href="./myblog.html">My Blog</a></li>
+        </ul>
+      </nav>
+      <ul>
+        <li>Reach me</li>
+        <li>
+          <a href="https://github.com/DamianToromanovic" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="mailto:d.toromanovic@web.de"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </li>
+      </ul>
+      <p>© 2024 Damian Toromanovic All rights reserved.</p>
+    </footer>
+  </body>
+</html>

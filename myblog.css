@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #4caf50;
+  --secondary: #ffc107;
+  --background: #f5f5f5;
+  --text-primary: #212121;
+  --text-secondary: #757575;
+  --nav-footer-bg: #333333;
+  --white: #ffffff;
+  --highlight: #ff5722;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+strong {
+  color: var(--primary);
+}
+
+#top {
+  margin-top: 15rem;
+}
+.headerblog {
+  position: relative;
+  width: 100vw;
+  background-color: var(--nav-footer-bg);
+  color: var(--white);
+}
+
+.burger2 {
+  position: fixed;
+  right: 1rem;
+  top: 0.5rem;
+  z-index: 3;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+i {
+  font-size: 2.2rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+i:hover {
+  transform: scale(1.2);
+  color: var(--primary);
+}
+
+.bookmarks {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--nav-footer-bg);
+  gap: 1rem;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  padding: 5rem 0.5rem 1rem 1rem;
+
+  a {
+    color: var(--white);
+  }
+  a:hover {
+    color: var(--primary);
+  }
+}
+
+.heins {
+  font-size: 2.5rem;
+  margin: 3rem 0 10rem 0;
+  color: var(--text-primary);
+}
+
+.navHeader2 {
+  position: fixed;
+  right: 2rem;
+  top: 8rem;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0 0 30px 30px;
+  box-shadow: 12px 12px rgba(0, 0, 0, 0.3);
+  display: none;
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    label i {
+      font-size: 1.5rem;
+      margin-left: 7rem;
+      color: var(--text-primary);
+    }
+  }
+}
+
+.navHeader2 ul li {
+  margin: 0 1rem 1rem 1rem;
+}
+
+.logo2 {
+  position: fixed;
+  font-size: 2.5rem;
+  display: block;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2;
+  font-family: fantasy;
+  color: var(--white);
+}
+
+.inputHeader {
+  display: none;
+}
+
+.fa-x:hover {
+  color: var(--primary);
+}
+
+header input[type="checkbox"]:checked + nav {
+  display: block;
+}
+
+.section1 {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.heins {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.blogintro {
+  font-size: 1.7rem;
+  padding: 1rem;
+  color: var(--primary);
+  border: solid;
+  border-radius: 8px;
+  box-shadow: 8px 8px #3e272383;
+}
+
+.section2 {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.blog {
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  picture {
+    width: 90%;
+    margin: 0 auto;
+    height: 15rem;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.backtt {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1rem;
+}
+
+.backtt::after {
+  content: "\f062";
+  font-family: "Font Awesome 6 Free";
+  font-size: 1rem;
+  font-weight: 900;
+  margin-left: 0.4rem;
+}
+
+.h3blog {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+.h4blog {
+  font-size: 1.5rem;
+  color: var(--highlight);
+}
+
+h5 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.articlebox {
+  padding: 1.5rem;
+}
+
+.code-container {
+  margin-top: 1.5rem;
+  overflow-x: scroll;
+  max-width: 100%;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: "Consolas", "Courier New", monospace;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  code {
+    color: #d4d4d4;
+  }
+}
+
+.pimcodecont {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.pic1:after {
+  content: "\f13b";
+  font-family: "Font Awesome 6 Brands";
+  font-size: 15rem;
+  position: absolute;
+  right: 10rem;
+  font-weight: 900;
+  display: none;
+  color: var(--primary);
+}
+
+.pic2:after {
+  content: "\f5fd";
+  font-family: "Font Awesome 6 Free";
+  font-size: 14rem;
+  right: 9rem;
+  position: absolute;
+  font-weight: 900;
+  display: none;
+  color: var(--primary);
+}
+
+.pic3:after {
+  content: "\f0e0";
+  font-family: "Font Awesome 6 Free";
+  font-size: 14rem;
+  position: absolute;
+  font-weight: 900;
+  right: 9rem;
+  display: none;
+  color: var(--primary);
+}
+
+.pic4:after {
+  content: "\e6a2";
+  font-family: "Font Awesome 6 Brands";
+  font-size: 14rem;
+  position: absolute;
+  font-weight: 900;
+  right: 9rem;
+  display: none;
+  color: var(--primary);
+}
+
+.pic5:after {
+  content: "\f1c9";
+  font-family: "Font Awesome 6 Free";
+  font-size: 14rem;
+  position: absolute;
+  font-weight: 900;
+  right: 9rem;
+  display: none;
+  color: var(--primary);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--nav-footer-bg);
+  color: var(--white);
+  margin-top: 5rem;
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    i {
+      color: var(--white);
+    }
+
+    i:hover {
+      transform: scale(1.4);
+      color: var(--primary);
+    }
+  }
+}
+
+.navFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  ul {
+    display: flex;
+    gap: 1rem;
+    li a {
+      color: var(--white);
+    }
+    a:hover {
+      color: var(--primary);
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .blogintro {
+    width: 70%;
+    margin: 4rem 0 4rem auto;
+  }
+  .section2 {
+    picture {
+      width: 50%;
+      margin: 0 auto 0 0;
+    }
+  }
+
+  .pic5:after,
+  .pic1:after,
+  .pic2:after,
+  .pic3:after,
+  .pic4:after {
+    display: inline-block;
+  }
+  .code-container {
+    width: 80%;
+    margin: 3rem auto;
+    min-height: 12rem;
+  }
+  .h4blog {
+    margin-top: -2rem;
+  }
+  h5 {
+    margin: 3rem 3rem 0.5rem 2rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .ueberbox {
+    width: 80%;
+    margin: 0 0 auto 8rem;
+  }
+  .code-container {
+    width: 80%;
+    margin: 2rem auto 2rem 0;
+  }
+}
+
+@media (min-width: 1300px) {
+  .ueberbox {
+    margin: 0 0 auto 11rem;
+  }
+  .code-container {
+    width: 60%;
+    margin: 2rem auto 2rem 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  .ueberbox {
+    width: 70%;
+    margin: 0 0 auto 15rem;
+  }
+}
